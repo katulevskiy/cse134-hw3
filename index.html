@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <!-- Responsive & Social Meta -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Daniel's personal portfolio showcasing projects and skills."
+    />
+    <meta name="author" content="Daniil Katulevskiy" />
+    <meta property="og:title" content="Daniil Katulevskiy - Portfolio" />
+    <meta
+      property="og:description"
+      content="A showcase of professional work and technical skills."
+    />
+    <meta
+      property="og:url"
+      content="https://katulevskiyportfolio.netlify.app/"
+    />
+    <title>Daniil Katulevskiy - Portfolio – Home</title>
+    <link rel="stylesheet" href="styles.css" />
+    <!-- Minimal inline CSS: allowed properties only (margin, padding, border) -->
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        border: 1px solid black;
+      }
+    </style>
+    <!-- "Hello World" custom element definition -->
+    <script>
+      class HelloWorld extends HTMLElement {
+        constructor() {
+          super();
+          console.log("Hello world!");
+        }
+      }
+      customElements.define("hello-world", HelloWorld);
+    </script>
+  </head>
+  <body>
+    <header>
+      <h1>Daniel's Portfolio</h1>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="resume.html">Resume</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="experiments.html">Experiments</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <!-- Welcome Section -->
+      <section>
+        <h2>Welcome</h2>
+        <p>
+          Hello, I'm Daniil Katulevskiy. Welcome to my portfolio site where I
+          share my projects, skills, and experiences.
+        </p>
+        <br />
+        <p>
+          This page is built with semantic HTML. For example, here’s a
+          <span>highlighted</span> word within a paragraph.
+        </p>
+      </section>
+
+      <!-- Process Section using a <div> wrapper and an ordered list (<ol>) -->
+      <section>
+        <div>
+          <h2>My Process</h2>
+          <ol>
+            <li>Plan the design</li>
+            <li>Code with semantic markup</li>
+            <li>Test for accessibility</li>
+          </ol>
+        </div>
+      </section>
+
+      <!-- Featured Project using <figure>, <picture>, and <figcaption> -->
+      <section>
+        <h2>Featured Project</h2>
+        <figure>
+          <picture>
+            <source srcset="project.webp" type="image/webp" />
+            <img src="project.jpg" alt="Screenshot of the featured project" />
+          </picture>
+          <figcaption>Project: Awesome Web App</figcaption>
+        </figure>
+      </section>
+
+      <!-- Embedded Media -->
+      <section>
+        <h2>Embedded Media</h2>
+        <p>Watch this video and listen to an audio sample:</p>
+        <video controls width="320">
+          <source src="sample.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+        <audio controls>
+          <source src="sample.mp3" type="audio/mpeg" />
+          Your browser does not support the audio element.
+        </audio>
+      </section>
+
+      <!-- Custom Elements Demonstration -->
+      <section>
+        <h2>Custom Elements</h2>
+        <p>
+          Below is a custom element that uses only semantic CSS (no JavaScript
+          behind it):
+        </p>
+        <my-semantic>Content inside a custom semantic element.</my-semantic>
+        <p>
+          And here is our custom “Hello World” element (check your console):
+        </p>
+        <hello-world></hello-world>
+      </section>
+    </main>
+    <footer>
+      <address>
+        Contact:
+        <a href="mailto:dkatulevskiy@ucsd.edu">dkatulevskiy@ucsd.edu</a>
+      </address>
+      <p>&copy; 2025 Daniel's Portfolio</p>
+    </footer>
+    <!-- Minimal script to demonstrate <canvas> usage -->
+    <script>
+      const canvas = document.createElement("canvas");
+      canvas.id = "homeCanvas";
+      canvas.width = 100;
+      canvas.height = 100;
+      document.body.insertBefore(canvas, document.querySelector("footer"));
+      const ctx = canvas.getContext("2d");
+      ctx.fillStyle = "green";
+      ctx.fillRect(10, 10, 50, 50);
+    </script>
+  </body>
+</html>
