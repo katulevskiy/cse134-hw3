@@ -49,7 +49,7 @@
       </nav>
     </header>
 
-    <!-- Hero Section with full-page background -->
+    <!-- Hero Section with full-page background (using CSS background) -->
     <section class="hero">
       <div class="hero-content">
         <h1>Welcome</h1>
@@ -57,24 +57,150 @@
       </div>
     </section>
 
-    <!-- Projects Section -->
+    <!-- Featured Project Section using proj3 images -->
+    <section class="featured-project">
+      <h2>Featured Project</h2>
+      <figure>
+        <picture>
+          <source
+            srcset="
+              assets/proj3-480.webp   480w,
+              assets/proj3-800.webp   800w,
+              assets/proj3-1200.webp 1200w
+            "
+            type="image/webp"
+          />
+          <source
+            srcset="
+              assets/proj3-480.jpg   480w,
+              assets/proj3-800.jpg   800w,
+              assets/proj3-1200.jpg 1200w
+            "
+            type="image/jpeg"
+          />
+          <img
+            src="assets/proj3-1200.jpg"
+            alt="Featured Project – Dynamic Solution"
+            style="width: 100%"
+          />
+        </picture>
+        <figcaption>Featured Project: Dynamic Solution</figcaption>
+      </figure>
+      <p>
+        This project demonstrates my ability to build interactive and responsive
+        web applications using modern web technologies.
+      </p>
+      <a href="https://github.com/katulevskiy/featured-project" class="btn"
+        >View Project on GitHub</a
+      >
+    </section>
+
+    <!-- Projects Section Grid (each tile uses a <picture> element with srcset) -->
     <section class="projects-grid">
       <h2>My Projects</h2>
       <div class="grid-container">
         <a href="projects.html" class="project-tile">
-          <img src="assets/proj1.webp" alt="Project 1" />
+          <picture>
+            <source
+              srcset="
+                assets/proj1-480.webp   480w,
+                assets/proj1-800.webp   800w,
+                assets/proj1-1200.webp 1200w
+              "
+              type="image/webp"
+            />
+            <source
+              srcset="
+                assets/proj1-480.jpg   480w,
+                assets/proj1-800.jpg   800w,
+                assets/proj1-1200.jpg 1200w
+              "
+              type="image/jpeg"
+            />
+            <img
+              src="assets/proj1-1200.jpg"
+              alt="Project One – Innovative Web App"
+              style="object-fit: cover; object-position: center"
+            />
+          </picture>
           <p>Project One – Innovative Web App</p>
         </a>
         <a href="projects.html" class="project-tile">
-          <img src="assets/proj2.webp" alt="Project 2" />
+          <picture>
+            <source
+              srcset="
+                assets/proj2-480.webp   480w,
+                assets/proj2-800.webp   800w,
+                assets/proj2-1200.webp 1200w
+              "
+              type="image/webp"
+            />
+            <source
+              srcset="
+                assets/proj2-480.jpg   480w,
+                assets/proj2-800.jpg   800w,
+                assets/proj2-1200.jpg 1200w
+              "
+              type="image/jpeg"
+            />
+            <img
+              src="assets/proj2-1200.jpg"
+              alt="Project Two – Creative Design"
+              style="object-fit: cover; object-position: center"
+            />
+          </picture>
           <p>Project Two – Creative Design</p>
         </a>
         <a href="projects.html" class="project-tile">
-          <img src="assets/proj3.webp" alt="Project 3" />
+          <picture>
+            <source
+              srcset="
+                assets/proj3-480.webp   480w,
+                assets/proj3-800.webp   800w,
+                assets/proj3-1200.webp 1200w
+              "
+              type="image/webp"
+            />
+            <source
+              srcset="
+                assets/proj3-480.jpg   480w,
+                assets/proj3-800.jpg   800w,
+                assets/proj3-1200.jpg 1200w
+              "
+              type="image/jpeg"
+            />
+            <img
+              src="assets/proj3-1200.jpg"
+              alt="Project Three – Dynamic Solution"
+              style="object-fit: cover; object-position: center"
+            />
+          </picture>
           <p>Project Three – Dynamic Solution</p>
         </a>
         <a href="projects.html" class="project-tile">
-          <img src="assets/proj4.webp" alt="Project 4" />
+          <picture>
+            <source
+              srcset="
+                assets/proj4-480.webp   480w,
+                assets/proj4-800.webp   800w,
+                assets/proj4-1200.webp 1200w
+              "
+              type="image/webp"
+            />
+            <source
+              srcset="
+                assets/proj4-480.jpg   480w,
+                assets/proj4-800.jpg   800w,
+                assets/proj4-1200.jpg 1200w
+              "
+              type="image/jpeg"
+            />
+            <img
+              src="assets/proj4-1200.jpg"
+              alt="Project Four – Cutting-edge Technology"
+              style="object-fit: cover; object-position: center"
+            />
+          </picture>
           <p>Project Four – Cutting-edge Technology</p>
         </a>
       </div>
