@@ -42,6 +42,7 @@ header nav ul {
   list-style: none;
   display: flex;
   justify-content: center;
+  align-items: center;
   gap: 1.5rem;
 }
 
@@ -55,6 +56,13 @@ header nav ul li a {
 header nav ul li a.active,
 header nav ul li a:hover {
   color: var(--accent-color);
+}
+
+/* Social icon styling */
+.social-link .nav-icon {
+  width: 24px;
+  height: auto;
+  vertical-align: middle;
 }
 
 /* --------------------------------
