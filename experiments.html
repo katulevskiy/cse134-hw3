@@ -7,15 +7,16 @@
       name="description"
       content="Experiments and demonstrations of various HTML elements."
     />
-    <meta name="author" content="Daniel" />
-    <title>Experiments – HTML Element Demonstration</title>
+    <meta name="author" content="Daniil Katulevskiy" />
+    <title>Experiments – Daniil Katulevskiy's Portfolio</title>
+    <!-- Load Montserrat from Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="styles.css" />
     <style>
-      body {
-        margin: 0;
-        padding: 0;
-        border: 1px solid black;
-      }
+      /* Only experimental element specific styles remain */
       dialog {
         border: 1px solid black;
         padding: 1em;
@@ -33,19 +34,46 @@
     </script>
   </head>
   <body>
+    <!-- Consistent Header -->
     <header>
-      <h1>Experiments & Demos</h1>
       <nav>
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="projects.html">Projects</a></li>
-          <li><a href="resume.html">Resume</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
+        <a href="#nav" class="nav-toggle-button">&#9776;</a>
+        <div id="nav" class="nav-menu">
+          <a href="#" class="nav-close">&times;</a>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="resume.html">Resume</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="experiments.html" class="active">Experiments</a></li>
+            <li class="social-link">
+              <a href="https://katul-portfolio.netlify.app/" target="_blank">
+                <img
+                  src="assets/netlify-logo.webp"
+                  alt="Netlify Logo"
+                  class="nav-icon"
+                />
+              </a>
+            </li>
+            <li class="social-link">
+              <a
+                href="https://github.com/katulevskiy/cse134-hw3"
+                target="_blank"
+              >
+                <img
+                  src="assets/github-logo.webp"
+                  alt="GitHub Logo"
+                  class="nav-icon"
+                />
+              </a>
+            </li>
+          </ul>
+        </div>
       </nav>
     </header>
 
+    <!-- Main Content -->
     <main>
       <section>
         <h2>HTML Elements Demonstration</h2>
@@ -288,20 +316,13 @@ function example() {
       </template>
     </main>
 
-    <div>
-      <search>
-        <form>
-          <input type="text" placeholder="enter name" />
-        </form>
-      </search>
-    </div>
-
+    <!-- Consistent Footer -->
     <footer>
       <address>
         Contact:
         <a href="mailto:dkatulevskiy@ucsd.edu">dkatulevskiy@ucsd.edu</a>
       </address>
-      <p>&copy; 2025 Daniel's Portfolio</p>
+      <p>&copy; 2025 Daniil Katulevskiy - Portfolio</p>
     </footer>
 
     <script>
