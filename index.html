@@ -5,16 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="Daniel's personal portfolio showcasing projects, skills, and experience."
+      content="Daniil Katulevskiy's personal portfolio showcasing projects, skills, and experience."
     />
-    <meta name="author" content="Daniel" />
-    <meta property="og:title" content="Daniel's Portfolio - Home" />
-    <meta
-      property="og:description"
-      content="Welcome to my personal portfolio website."
-    />
-    <title>Daniel's Portfolio – Home</title>
-    <!-- Link to Montserrat font from Google Fonts -->
+    <meta name="author" content="Daniil Katulevskiy" />
+    <title>Daniil Katulevskiy - Portfolio Home</title>
+    <!-- Load Montserrat from Google Fonts -->
     <link
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap"
       rel="stylesheet"
@@ -23,91 +18,55 @@
   </head>
   <body>
     <header>
-      <div class="header-container">
-        <h1>Daniel's Portfolio</h1>
-        <nav>
-          <ul>
-            <li><a href="index.html" class="active">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="projects.html">Projects</a></li>
-            <li><a href="resume.html">Resume</a></li>
-            <li><a href="contact.html">Contact</a></li>
-            <li><a href="experiments.html">Experiments</a></li>
-          </ul>
-        </nav>
-      </div>
-      <div class="links">
-        <a href="https://yourportfolio.netlify.app" target="_blank"
-          >Live Site</a
-        >
-        |
-        <a href="https://github.com/username/portfolio" target="_blank"
-          >GitHub Repo</a
-        >
-      </div>
+      <nav>
+        <ul>
+          <li><a href="index.html" class="active">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="resume.html">Resume</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="experiments.html">Experiments</a></li>
+        </ul>
+      </nav>
     </header>
 
-    <main>
-      <section class="welcome">
-        <h2>Welcome</h2>
-        <p>
-          Hello, I'm Daniel—a passionate web developer specializing in creating
-          dynamic, responsive, and accessible web experiences. Explore my
-          portfolio to see my projects and learn more about my work.
-        </p>
-      </section>
+    <!-- Hero Section with full-page background -->
+    <section class="hero">
+      <div class="hero-content">
+        <h1>Welcome</h1>
+        <h2>Daniil Katulevskiy</h2>
+      </div>
+    </section>
 
-      <section class="featured-project">
-        <h2>Featured Project</h2>
-        <figure>
-          <picture>
-            <source srcset="project.webp" type="image/webp" />
-            <img src="project.jpg" alt="Screenshot of the featured project" />
-          </picture>
-          <figcaption>Project: Innovative Web Application</figcaption>
-        </figure>
-        <p>
-          This project demonstrates my ability to build interactive and
-          responsive web applications using modern web technologies.
-        </p>
-        <a href="https://github.com/username/featured-project" class="btn"
-          >View Project on GitHub</a
-        >
-      </section>
-
-      <section class="custom-demo">
-        <h2>Custom Elements Demo</h2>
-        <p>
-          Check out my custom element in action (see console for a "Hello World"
-          message):
-        </p>
-        <hello-world></hello-world>
-      </section>
-
-      <section class="animation-demo">
-        <h2>Animation Demo</h2>
-        <div class="pulse-box"></div>
-        <p>This box pulses with a dynamic animation effect.</p>
-      </section>
-    </main>
+    <!-- Projects Section -->
+    <section class="projects-grid">
+      <h2>My Projects</h2>
+      <div class="grid-container">
+        <a href="projects.html" class="project-tile">
+          <img src="assets/proj1.webp" alt="Project 1" />
+          <p>Project One – Innovative Web App</p>
+        </a>
+        <a href="projects.html" class="project-tile">
+          <img src="assets/proj2.webp" alt="Project 2" />
+          <p>Project Two – Creative Design</p>
+        </a>
+        <a href="projects.html" class="project-tile">
+          <img src="assets/proj3.webp" alt="Project 3" />
+          <p>Project Three – Dynamic Solution</p>
+        </a>
+        <a href="projects.html" class="project-tile">
+          <img src="assets/proj4.webp" alt="Project 4" />
+          <p>Project Four – Cutting-edge Technology</p>
+        </a>
+      </div>
+    </section>
 
     <footer>
       <address>
         Contact:
         <a href="mailto:dkatulevskiy@ucsd.edu">dkatulevskiy@ucsd.edu</a>
       </address>
-      <p>&copy; 2025 Daniel's Portfolio</p>
+      <p>&copy; 2025 Daniil Katulevskiy - Portfolio</p>
     </footer>
-
-    <script>
-      // Define a custom "Hello World" element
-      class HelloWorld extends HTMLElement {
-        constructor() {
-          super();
-          console.log("Hello World from custom element!");
-        }
-      }
-      customElements.define("hello-world", HelloWorld);
-    </script>
   </body>
 </html>
