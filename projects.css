@@ -84,6 +84,7 @@ main {
   color: var(--primary-color);
 }
 
+/* Each project tile */
 .project {
   display: flex;
   flex-wrap: wrap;
@@ -91,11 +92,23 @@ main {
   margin-bottom: 3rem;
   padding: 1rem;
   border: 1px solid #ddd;
+  /* Reserve left border space with a transparent 5px border to avoid content shift */
+  border-left: 5px solid transparent;
   border-radius: 8px;
   background: #fff;
   overflow: hidden;
   /* CSS Animation applied to each project */
   animation: slideIn 0.8s ease-out;
+}
+
+/* When hovering over the entire project tile, change left border to the primary (nav bar) blue */
+.project:hover {
+  border-left-color: var(--primary-color);
+}
+
+/* When hovering over the GitHub link inside the project, override left border to purple */
+.project:has(.github-link:hover) {
+  border-left-color: purple;
 }
 
 /* --------------------------------
@@ -162,15 +175,6 @@ main {
     transform: translateX(0);
     opacity: 1;
   }
-}
-
-/* --------------------------------
-   New Selector: :has() Demonstration
-   When a project’s GitHub link is hovered, change the left border of the project
-   (Note: :has() is still experimental in some browsers)
-   -------------------------------- */
-.project:has(.github-link:hover) {
-  border-left: 5px solid var(--accent-color);
 }
 
 /* --------------------------------
